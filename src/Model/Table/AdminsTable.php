@@ -90,4 +90,16 @@ class AdminsTable extends Table
 
         return $rules;
     }
+
+    /**
+     * add contain AdminGroups when Auth
+     * @param $query
+     * @param array $options
+     * @return mixed
+     */
+    public function findGroups($query, array $options)
+    {
+        return $query
+            ->contain(['AdminGroups']);
+    }
 }

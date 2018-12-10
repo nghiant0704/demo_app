@@ -61,4 +61,20 @@ class Product extends Entity
         'feature' => true,
         'category' => true
     ];
+
+    protected function _setImage_link($value){
+        if ($value != null) {
+            return $value;
+        } else {
+            return $this->image_link;
+        }
+    }
+
+    protected function _setImage_list($value){
+        if ($value != null) {
+            return $value;
+        } else {
+            return $this->image_list;
+        }
+    }
 }

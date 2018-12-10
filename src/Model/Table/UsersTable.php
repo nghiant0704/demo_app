@@ -81,6 +81,8 @@ class UsersTable extends Table
             ->requirePresence('password', 'create')
             ->notEmpty('password');
 
+        $validator->sameAs('password_match','password','Passwords not equal.');
+
         return $validator;
     }
 

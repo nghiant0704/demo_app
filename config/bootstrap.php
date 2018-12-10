@@ -197,3 +197,19 @@ Type::build('timestamp')
 //Inflector::rules('irregular', ['red' => 'redlings']);
 //Inflector::rules('uninflected', ['dontinflectme']);
 //Inflector::rules('transliteration', ['/å/' => 'aa']);
+Plugin::load('AdminLTE', ['bootstrap' => true, 'routes' => true]);
+
+Configure::write('Theme', [
+    'title' => 'AdminLTE',
+    'logo' => [
+        'mini' => '<b>A</b>LT',
+        'large' => '<b>Admin</b>LTE'
+    ],
+    'login' => [
+        'show_remember' => false,
+        'show_register' => false,
+        'show_social' => false
+    ],
+    'folder' => ROOT,
+    'skin' => 'blue' // default is 'blue'
+]);

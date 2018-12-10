@@ -10,7 +10,9 @@
         "cakephp/migrations": "^2.0.0",
         "cakephp/plugin-installer": "^1.0",
         "josegonzalez/dotenv": "3.*",
-        "mobiledetect/mobiledetectlib": "2.*"
+        "maiconpinto/cakephp-adminlte-theme": "^1.0",
+        "mobiledetect/mobiledetectlib": "2.*",
+        "robotusers/cakephp-excel": "^0.6.0"
     },
     "require-dev": {
         "cakephp/bake": "^1.1",
